@@ -6,7 +6,7 @@ services:
             dockerfile: Dockerfile
         image: vapor-composer-image
         ports:
-            - 80:80
+            - 8080:80
         depends_on:
         - "mysql-5"
     mysql-5:
