@@ -5,17 +5,19 @@ services:
             context: .
             dockerfile: Dockerfile
         image: vapor-composer-image
+        environment:
+            SLEEP_LENGTH: 5
+            POSTGRES_HOST: db
+            POSTGRES_USER: test
+            POSTGRES_PASSWORD: test
+            POSTGRES_DB: test
         ports:
             - 8080:80
         depends_on:
-        - "mysql-5"
-    mysql-5:
-        image: mysql:5
+            - "db"
+    db:
+        image: postgres
         environment:
-            MYSQL_HOST:
-            MYSQL_ALLOW_EMPTY_PASSWORD: "true"
-            MYSQL_DATABASE: vaporDataBase
-            MYSQL_USER: vapor
-            MYSQL_PASSWORD: BBS54535253
-        ports:
-            - 3306:3306
+            POSTGRES_USER: test
+            POSTGRES_PASSWORD: test
+            POSTGRES_DB: test

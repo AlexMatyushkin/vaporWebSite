@@ -1,7 +1,7 @@
-import FluentMySQL
+import FluentPostgreSQL
 import Vapor
 
-final class Jobs: MySQLModel {
+final class Jobs: PostgreSQLModel {
     
     var id: Int?
     var title: String
