@@ -1,0 +1,18 @@
+version: "3"
+services:
+    resumeApp:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: vapor-composer-image
+        ports:
+            - 80:80
+    mysql-5:
+        image: mysql:5.7
+        environment:
+            MYSQL_ALLOW_EMPTY_PASSWORD: "true"
+            MYSQL_DATABASE: vaporDataBase
+            MYSQL_USER: vapor
+            MYSQL_PASSWORD: BBS54535253
+        ports:
+            - 3306:3306

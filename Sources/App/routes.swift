@@ -13,8 +13,12 @@ public func routes(_ router: Router) throws {
     }
 
     // Example of configuring a controller
-    let todoController = TodoController()
-    router.get("todos", use: todoController.index)
-    router.post("todos", use: todoController.create)
-    router.delete("todos", Todo.parameter, use: todoController.delete)
+    let jobsController = JobsController()
+    router.get("jobs", use: jobsController.index)
+    router.post("jobs", use: jobsController.create)
+    router.delete("jobs", Jobs.parameter, use: jobsController.delete)
+    
+    //Register WebSiteController
+    let websiteController = WebsiteController()
+    try router.register(collection: websiteController)
 }

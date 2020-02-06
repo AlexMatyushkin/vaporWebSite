@@ -1,11 +1,16 @@
-import FluentSQLite
+import FluentMySQL
 import Vapor
+import Leaf
 
 /// Called before your application initializes.
-public func configure(_ config: inout Config, _ env: inout Environment, _ services: inout Services) throws {
+public func configure(_ config: inout Config,
+                      _ env: inout Environment,
+                      _ services: inout Services) throws {
+    
     // Register providers first
-    try services.register(FluentSQLiteProvider())
-
+    try services.register(FluentMySQLProvider())
+    try services.register(LeafProvider())
+    
     // Register routes to the router
     let router = EngineRouter.default()
     try routes(router)
@@ -17,16 +22,25 @@ public func configure(_ config: inout Config, _ env: inout Environment, _ servic
     middlewares.use(ErrorMiddleware.self) // Catches errors and converts to HTTP response
     services.register(middlewares)
 
-    // Configure a SQLite database
-    let sqlite = try SQLiteDatabase(storage: .memory)
-
-    // Register the configured SQLite database to the database config.
-    var databases = DatabasesConfig()
-    databases.add(database: sqlite, as: .sqlite)
-    services.register(databases)
-
+    // Configure a MySQL database
+    var databeses = DatabasesConfig()
+    
+    let databaseConfig = MySQLDatabaseConfig(
+        hostname: "80.78.240.211",
+        port: 3306,
+        username: "vapor",
+        password: "BBS54535253",
+        database: "vaporDataBase"
+    )
+    
+    let database = MySQLDatabase(config: databaseConfig)
+    databeses.add(database: database, as: .mysql)
+    services.register(databeses)
+    
     // Configure migrations
     var migrations = MigrationConfig()
-    migrations.add(model: Todo.self, database: .sqlite)
+    migrations.add(model: Jobs.self, database: .mysql)
     services.register(migrations)
+    
+    config.prefer(LeafRenderer.self, for: ViewRenderer.self)
 }
