@@ -26,7 +26,6 @@ public func configure(_ config: inout Config,
     var databeses = DatabasesConfig()
     
     let databaseConfig = MySQLDatabaseConfig(
-        hostname: "localhost",
         port: 3306,
         username: "root",
         password: "root",
