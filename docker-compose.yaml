@@ -8,7 +8,7 @@ services:
         ports:
             - 80:80
         depends_on:
-        - "mysql-5"
+        - "mysql-2"
     mysql-2:
         image: mysql:2
         environment:
