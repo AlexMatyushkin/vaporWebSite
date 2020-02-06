@@ -45,7 +45,4 @@ public func configure(_ config: inout Config,
     services.register(migrations)
     
     config.prefer(LeafRenderer.self, for: ViewRenderer.self)
-    
-    let myServerConfig = try EngineServerConfig.detect(from: &env, port: 80)
-    services.register(myServerConfig)
 }
