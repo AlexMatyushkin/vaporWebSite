@@ -28,8 +28,8 @@ public func configure(_ config: inout Config,
     let databaseConfig = MySQLDatabaseConfig(
         hostname: "80.78.240.211",
         port: 3306,
-        username: "vapor",
-        password: "BBS54535253",
+        username: "root",
+        password: "root",
         database: "vaporDataBase"
     )
     
