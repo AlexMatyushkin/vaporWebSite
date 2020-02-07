@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Bootstrap Example</title>
+        <title>Alex Matyushkin IOS developer</title>
         <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
                     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    </head>
+                    </head>
     <body>
         <div class="jumbotron text-center">
+            <div class="text-center">
+                <img src="/images/img.jpg" class="rounded" alt="Oops..">
+                    </div>
+            
             <h1>Welcom to Alex Matyushkin CV</h1>
             <p>This page develop and run by Swift!</p>
             <p>Where did I work?</p>
@@ -34,7 +38,50 @@
                 </div>
             </div>
         </div>
-        
+        <!-- Footer -->
+        <footer class="page-footer font-small teal pt-4">
+            
+            <!-- Footer Text -->
+            <div class="container-fluid text-center text-md-left">
+                
+                <!-- Grid row -->
+                <div class="row">
+                    
+                    <!-- Grid column -->
+                    <div class="col-md-6 mt-md-0 mt-3">
+                        
+                        <!-- Content -->
+                        <h5 class="text-uppercase font-weight-bold">Telegramm</h5>
+                        <p>@this will be link</p>
+                        
+                    </div>
+                    <!-- Grid column -->
+                    
+                    <hr class="clearfix w-100 d-md-none pb-3">
+                    
+                    <!-- Grid column -->
+                    <div class="col-md-6 mb-md-0 mb-3">
+                        
+                        <!-- Content -->
+                        <h5 class="text-uppercase font-weight-bold">E-mail</h5>
+                        <p>test@test.gb</p>
+                        
+                    </div>
+                    <!-- Grid column -->
+                    
+                </div>
+                <!-- Grid row -->
+                
+            </div>
+            <!-- Footer Text -->
+            
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                <a href="https://github.com/AlexMatyushkin/vaporWebSite"> Aleksay Matyushkin</a>
+            </div>
+            <!-- Copyright -->
+            
+        </footer>
     </body>
 </html>
 
