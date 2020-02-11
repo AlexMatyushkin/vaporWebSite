@@ -1,41 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Alex Matyushkin IOS developer</title>
         <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-                    </head>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <title>Bootstrap 101 Template</title>
+                    
+                    <!-- Bootstrap -->
+                    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+                        </head>
     <body>
         <div class="jumbotron text-center">
-            <div class="text-center">
-                <img src="images/i.png" class="rounded" alt="Oops..It's miss...">
-                    </div>
             
-            <h1>Welcom to Alex Matyushkin CV</h1>
-            <p>This page develop and run by Swift!</p>
-            <p>About me</p>
+            <h1>Welcom to Alex Matyushkin CV site!</h1>
+            <div class="text-center">
+                <img src="/images/i.png" class="rounded" alt="Oops..It's miss...">
+                    </div>
         </div>
         
+        <!-- Expirence -->
         <div class="container">
             <div class="row">
+                <h2>Experience</h2>
                 <div class="col-sm-4">
-                    <h3>Sberbank</h3>
-                    <p>Develop IOS applications</p>
-                    <p>Something interesting!</p>
+                    <h3><a href="https://www.sberbank.com/index">Sberbank</a></h3>
+                    <h4>IOS software engineer</h4>
+                    <h5>From Aprill 2018</h5>
+                    <p>A part of feature Develop team which developing Sberbank business online application.
+                    <br>We are using VAPOR architecture and don't use open source frameworks, prefer common Apples.
+                    <br>I developing online credit system for our clients companies.
+                    </p>
                 </div>
-                <div class="col-sm-4">
-                    <h3>Tinkoff</h3>
-                    <p>Waiting for 19 o'clock</p>
-                    <p>Yes, I had learning Swift and IOS architecture here</p>
-                </div>
-                <div class="col-sm-4">
-                    <h3>Freelance</h3>
-                    <p>Make money</p>
-                    <p>No tell, no ask..</p>
-                </div>
+            </div>
+        </div>
+        <!-- Expirence end -->
+        <div class="container">
+            <a href="#demo" class="btn btn-info" data-toggle="collapse"> <h2>Skills</h2></a>
+            <div id="demo" class="collapse">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Skill</th>
+                            <th>Degree</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Swift</td>
+                            <td>Advance</td>
+                        </tr>
+                        <tr>
+                            <td>Objective-C</td>
+                            <td>Basic</td>
+                        </tr>
+                        <tr>
+                            <td>UIKit</td>
+                            <td>Advance</td>
+                        </tr>
+                        <tr>
+                            <td>SwiftUI</td>
+                            <td>Basic</td>
+                        </tr>
+                        <tr>
+                            <td>RXSwift</td>
+                            <td>Basic</td>
+                        </tr>
+                        <tr>
+                            <td>CoreData/Realm</td>
+                            <td>Middle</td>
+                        </tr>
+                        <tr>
+                            <td>REST API</td>
+                            <td>Advance</td>
+                        </tr>
+                        <tr>
+                            <td>Websocket</td>
+                            <td>Basic</td>
+                        </tr>
+                        <tr>
+                            <td>Server side Swift</td>
+                            <td>Basic</td>
+                        </tr>
+                        <tr>
+                            <td>VIPER/MVC/MVVM</td>
+                            <td>Advance</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
         <!-- Footer -->
@@ -52,7 +105,7 @@
                         
                         <!-- Content -->
                         <h5 class="text-uppercase font-weight-bold">Telegramm</h5>
-                        <p>@this will be link</p>
+                        <p><a href="https://t.me/pro2sick">@pro2stick</a></p>
                         
                     </div>
                     <!-- Grid column -->
@@ -64,7 +117,7 @@
                         
                         <!-- Content -->
                         <h5 class="text-uppercase font-weight-bold">E-mail</h5>
-                        <p>test@test.gb</p>
+                        <p><a href="mailto:rodger88rus@icloud.com">rodger88rus@icloud.com</a></p>
                         
                     </div>
                     <!-- Grid column -->
@@ -84,4 +137,3 @@
         </footer>
     </body>
 </html>
-
