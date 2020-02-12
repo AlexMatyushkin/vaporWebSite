@@ -20,14 +20,14 @@ struct HomePageController: RouteCollection {
                                  whatToDo:
             """
             Develop a corporative messanger "Sberchat".
-            <br>I had debugging it and had developing new feature kind of:
-            <br>-Users permissions in groups and channel;
-            <br>-Create wounded contact screen.
-            <br>
-            <br> Develop an enterprise IOS store for our company IOS apps.
-            <br>-Create MVP application;
-            <br>-Refactoring app for VIPER;
-            <br>-Add VDI functional for VPN connections to our company resource.
+            I had debugging it and had developing new feature kind of:
+            1) Users permissions in groups and channel;
+            2) Create wounded contact screen.
+            
+            Develop an enterprise IOS store for our company IOS apps.
+            Create MVP application;
+            1) Refactoring app for VIPER;
+            2) Add VDI functional for VPN connections to our company resource.
             """))
         position.append(Position(name: "IOS software enginner",
                                  whatToDo:
