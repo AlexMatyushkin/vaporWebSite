@@ -4,7 +4,7 @@
         <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
                 <meta name="viewport" content="width=device-width, initial-scale=1">
-                    <title>Alex Matyushkin</title>
+                    <title>#title</title>
                     
                     <!-- Bootstrap -->
                     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
@@ -25,13 +25,15 @@
             <div class="row">
                 <h2>Experience</h2>
                 <div class="col-sm-4">
-                    <h3><a href="https://www.sberbank.com/index">Sberbank</a></h3>
-                    <h4>IOS software engineer</h4>
-                    <h5>From Aprill 2018</h5>
-                    <p>A part of feature Develop team which developing Sberbank business online application.
-                    <br>We are using VAPOR architecture and don't use open source frameworks, prefer common Apples.
-                    <br>I developing online credit system for our clients companies.
-                    </p>
+                    # for (job in jobs) {
+                    <h3><a href=#job.companyLink>#job.companyName</a></h3>
+                    <h5>#job.workPeriod</h5>
+                    
+                        # for (position in job.positions) {
+                        <h4>#position.name</h4>
+                        <p>#position.whatToDo</p>
+                        }
+                    }
                 </div>
             </div>
         </div>
