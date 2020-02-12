@@ -27,11 +27,11 @@
                 <div class="col-sm-4">
                     # for (job in jobs) {
                     <h3><a href=#job.companyLink>#job.companyName</a></h3>
-                    <h5>#job.workPeriod</h5>
+                    <h5>#(job.workPeriod)</h5>
                     
                         # for (position in job.positions) {
-                        <h4>#position.name</h4>
-                        <p>#position.whatToDo</p>
+                        <h4>#(position.name)</h4>
+                        <p>#(position.whatToDo)</p>
                         }
                     }
                 </div>

@@ -12,13 +12,7 @@ public func routes(_ router: Router) throws {
         return "Hello, world!"
     }
 
-    // Example of configuring a controller
-    let jobsController = JobsController()
-    router.get("jobs", use: jobsController.index)
-    router.post("jobs", use: jobsController.create)
-    router.delete("jobs", Jobs.parameter, use: jobsController.delete)
-    
     //Register WebSiteController
-    let websiteController = WebsiteController()
-    try router.register(collection: websiteController)
+    let homePageController = HomePageController()
+    try router.register(collection: homePageController)
 }
