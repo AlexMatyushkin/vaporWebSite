@@ -5,12 +5,14 @@ struct HomePageController: RouteCollection {
   
     func boot(router: Router) throws {
         router.get(use: indexHandler)
+        router.get("detaile", use: detailedHandler)
     }
     
     func indexHandler(_ req: Request) throws -> Future<View> {
         let context = createContext()
         return try req.view().render("index", context)
     }
+    
     
     func createContext() -> HomePageContext {
         var jobs: [Job] = []
@@ -87,6 +89,10 @@ struct HomePageController: RouteCollection {
                         workPeriod: "From Aprill 2016 to Aprill 2018",
                         positions: newPosition))
         return HomePageContext(title: "Alex Matyushkin", jobs: jobs)
+    }
+    
+    func detailedHandler(_ req: Request) throws -> Future<View> {
+        return try req.view().render("detaile")
     }
 }
 
